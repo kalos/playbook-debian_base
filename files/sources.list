@@ -1,0 +1,2 @@
+deb http://http.debian.net/debian stable main contrib non-free
+deb http://http.debian.net/debian-backports squeeze-backports main

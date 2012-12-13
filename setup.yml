@@ -1,0 +1,13 @@
+---
+- hosts: test
+
+  vars_files:
+    - ../vars/global.yml
+    - [ "../vars/debian_base.yml", "vars/main.yml" ]
+
+  tasks:
+    - include: tasks/setup.yml
+
+  handlers:
+    - include: handlers/main.yml
+

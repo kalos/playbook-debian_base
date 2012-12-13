@@ -1,0 +1,4 @@
+dbconfig-common dbconfig-common/dbconfig-install        boolean false
+dbconfig-common dbconfig-common/dbconfig-reinstall      boolean false
+dbconfig-common dbconfig-common/dbconfig-upgrade        boolean false
+dbconfig-common dbconfig-common/dbconfig-remove         boolean false
