@@ -20,6 +20,7 @@
     - less
     - ncurses-term
     - logwatch
+    - rsync
     - vim
   tags:
     - packages
@@ -57,8 +58,18 @@
 # }
 
 # { NTP
+- name: install ntpdate
+  apt: name=ntpdate state=installed
+  register: ntpdate
+  tags:
+    - packages
+
+- name: exec ntpdate
+  command: ntpdate-debian
+  when_boolean: ${ntpdate.changed}
+
 - name: install NTP deamon
-  apt: pkg=ntp state=installed
+  apt: name=ntp state=installed
   tags:
     - packages
 

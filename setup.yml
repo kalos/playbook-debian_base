@@ -1,5 +1,5 @@
 ---
-- hosts: test
+- hosts: all
 
   vars_files:
     - ../vars/global.yml
