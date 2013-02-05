@@ -10,4 +10,3 @@
 
   handlers:
     - include: handlers/main.yml
-
